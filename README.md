@@ -1,20 +1,34 @@
->## A Big Update Is Coming
+# React Hot Loader 3 [![npm package](https://img.shields.io/npm/v/react-hot-loader.svg?style=flat-square)](https://www.npmjs.org/package/react-hot-loader)
 
->React Hot Loader 3 is [on the horizon](https://github.com/gaearon/react-hot-loader/pull/240), and you can try it today ([boilerplate branch](https://github.com/gaearon/react-hot-boilerplate/pull/61), [upgrade example](https://github.com/gaearon/redux-devtools/commit/64f58b7010a1b2a71ad16716eb37ac1031f93915)). It fixes some [long-standing issues](https://twitter.com/dan_abramov/status/722040946075045888) with both React Hot Loader and React Transform, and is intended as a replacement for both. The docs are not there yet, but they will be added before the final release. For now, [this commit](https://github.com/gaearon/redux-devtools/commit/64f58b7010a1b2a71ad16716eb37ac1031f93915) is a good reference.You can install RHL3 using `npm install --save-dev react-hot-loader@next`
+### React Hot Loader 3 has arrived!
 
-# React Hot Loader [![npm package](https://img.shields.io/npm/v/react-hot-loader.svg?style=flat-square)](https://www.npmjs.org/package/react-hot-loader)
+It fixes some long-standing issues with both React Hot Loader and React Transform.
+
+**It is intended as a replacement for both.**
+
+Some nice things about it:
+
+* Editing functional components preserves state
+* Works great with higher order components
+* Requires little configuration
+* Automatically disabled in production
+* Works with or without Babel (you can remove `react-hot-loader/babel` from `.babelrc` and instead add `react-hot-loader/webpack` to `loaders`)
+
+Check out [the Migration to 3.0 guide](https://github.com/gaearon/react-hot-loader/tree/master/docs#migration-to-30) to learn how to migrate your app to 3.0.
+
+### Learn
 
 This is a **stable for daily use in development** implementation of [React live code editing](https://www.youtube.com/watch?v=pw4fKkyPPg8).
 
 * Get inspired by a **[demo video](https://vimeo.com/100010922)** and **[try the live demo](http://gaearon.github.io/react-hot-loader/)**.
 
-* Read **[the integration walkthrough](http://gaearon.github.io/react-hot-loader/getstarted/).**
+* Read **[the Getting Started guide](http://gaearon.github.io/react-hot-loader/getstarted/).**
 
 * Use **[one of the starter kits](https://github.com/gaearon/react-hot-loader/tree/master/docs#starter-kits)** for your next React project.
 
 ## The Talk
 
-React Hot Loader was demoed together with **[Redux](https://github.com/gaearon/redux)** at React Europe.  
+React Hot Loader was demoed together with **[Redux](https://github.com/gaearon/redux)** at React Europe.
 Watch **[Dan Abramov's talk on Hot Reloading with Time Travel](https://www.youtube.com/watch?v=xsSnOQynTHs).**
 
 ## Installation
@@ -31,13 +45,9 @@ To use React Hot Loader in an existing project, you need to
 * enable Hot Module Replacement, which is a Webpack feature;
 * configure Webpack to use React Hot Loader for JS or JSX files.
 
-These steps are covered by **[the walkthrough](http://gaearon.github.io/react-hot-loader/getstarted/)**.
+These steps are covered by **[the Getting Started guide](http://gaearon.github.io/react-hot-loader/getstarted/)**.
 
 If you'd rather stay with **Browserify**, check out **[LiveReactload](https://github.com/milankinen/livereactload)** by Matti Lankinen.
-
-## Flux
-
-**[Redux](https://github.com/gaearon/redux)** is a Flux implementation that supports hot reloading of everything out of the box. Read **[The Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31)** for some context around its creation.
 
 ## React Native
 
@@ -63,7 +73,7 @@ Watch the repo to stay tuned!
 
 ## Patrons
 
-The work on React Hot Loader, [React Transform](https://github.com/gaearon/babel-plugin-react-transform), [Redux](https://github.com/reactjs/redux), and related projects was [funded by the community](https://www.patreon.com/reactdx).  
+The work on React Hot Loader, [React Transform](https://github.com/gaearon/babel-plugin-react-transform), [Redux](https://github.com/reactjs/redux), and related projects was [funded by the community](https://www.patreon.com/reactdx).
 Meet some of the outstanding companies that made it possible:
 
 * [Webflow](https://github.com/webflow)
